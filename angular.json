@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "teste": {
+    "poc-rotas": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/teste",
+            "outputPath": "dist/poc-rotas",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "teste:build:production"
+              "buildTarget": "poc-rotas:build:production"
             },
             "development": {
-              "buildTarget": "teste:build:development"
+              "buildTarget": "poc-rotas:build:development"
             }
           },
           "defaultConfiguration": "development"
